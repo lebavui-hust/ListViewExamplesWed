@@ -1,4 +1,4 @@
-package com.example.listviewexamples;
+package com.example.listviewexamples.models;
 
 public class ItemModel {
     private String title;

@@ -22,8 +22,9 @@ public class SpinnerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_spinner);
 
         items = new ArrayList<>();
-        for (int i = 0; i < 20; i++)
-            items.add("Item " + i);
+        items.add("USD");
+        items.add("VND");
+        items.add("EUR");
 
 //        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
 //                android.R.layout.simple_spinner_dropdown_item,
@@ -34,23 +35,11 @@ public class SpinnerActivity extends AppCompatActivity {
                 R.id.text_view,
                 items);
 
-        Spinner spinner = findViewById(R.id.spinner);
-        spinner.setAdapter(adapter);
+        Spinner spinnerFrom = findViewById(R.id.spinner_from);
+        spinnerFrom.setAdapter(adapter);
 
-        spinner.setSelection(10);
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String item = items.get(i);
-                Log.v("TAG", "Selected: " + item);
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
+        Spinner spinnerTo = findViewById(R.id.spinner_to);
+        spinnerTo.setAdapter(adapter);
 
     }
 }

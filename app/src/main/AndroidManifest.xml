@@ -9,15 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ListViewExamples">
-        <activity android:name=".AutoTextViewActivity">
+        <activity android:name=".LeftRightListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GridViewActivity"></activity>
-        <activity android:name=".SpinnerActivity"></activity>
+        <activity android:name=".CustomListActivity">
+        </activity>
+        <activity android:name=".GridImageActivity"></activity>
+        <activity android:name=".HorizontalListActivity" />
+        <activity android:name=".AutoTextViewActivity" />
+        <activity android:name=".GridViewActivity" />
+        <activity android:name=".SpinnerActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity" />
     </application>
